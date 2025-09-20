@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultório Lauane Ferraz - Psicologia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 80px 0;
+            color: white;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            backdrop-filter: blur(10px);
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+        
+        .cta-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: rgba(255, 255, 255, 0.6);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .content {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 60px 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            margin: 40px 0;
+            animation: fadeInUp 1s ease-out 0.9s both;
+        }
+        
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .service-card {
+            background: linear-gradient(45deg, #f093fb 0%, #f5576c 100%);
+            padding: 30px;
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+            transform: translateY(0);
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .contact {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .contact h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .contact-item {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 200px;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: white;
+            opacity: 0.8;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .subtitle { font-size: 1.1rem; }
+            .content { padding: 40px 20px; }
+            .contact-info { flex-direction: column; align-items: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Lauane Ferraz</h1>
+            <p class="subtitle">Psicóloga Clínica | Cuidando da sua saúde mental com dedicação e profissionalismo</p>
+            <a href="#contato" class="cta-button">Agende sua consulta</a>
+        </header>
+        
+        <div class="content">
+            <div class="services">
+                <div class="service-card">
+                    <h3>Terapia Individual</h3>
+                    <p>Atendimento personalizado para adultos, com foco no seu bem-estar emocional e crescimento pessoal.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Consultas Online</h3>
+                    <p>Sessões por videoconferência com a mesma qualidade do atendimento presencial, no conforto da sua casa.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Abordagem Humanizada</h3>
+                    <p>Tratamento respeitoso e acolhedor, adaptado às suas necessidades individuais e ritmo pessoal.</p>
+                </div>
+            </div>
+            
+            <div class="contact" id="contato">
+                <h2>Entre em Contato</h2>
+                <p>Estou aqui para ajudá-lo em sua jornada de autoconhecimento e bem-estar.</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>WhatsApp</h4>
+                        <p>Agendamentos e informações</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h4>Atendimento Online</h4>
+                        <p>Consultas por videoconferência</p>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <h4>Horários</h4>
+                        <p>Segunda a sexta<br>8h às 18h</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Consultório Lauane Ferraz - Psicologia. Todos os direitos reservados.</p>
+            <p>CRP: [Número do seu registro] | Abordagem: [Sua abordagem terapêutica]</p>
+        </footer>
+    </div>
+</body>
+</html>
